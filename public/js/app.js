@@ -2,6 +2,27 @@ var myApp = angular.module('myApp',[]);
 
 myApp.controller('myCtrl',['$scope','$http',function($scope,$http){
 
+    // console.log('foobar')
+
+    $scope.init = function(){
+        // console.log('foo')
+
+        console.log(window.top)
+
+        console.log(window.self)
+
+        if(window.top != window.self){
+
+    　　  console.log('fileinframe')
+
+    　　}else{
+
+            console.log('filenotinframe')
+
+        }
+
+    }
+
 	$scope.linkDatabase = function(){
 
 		$http({
