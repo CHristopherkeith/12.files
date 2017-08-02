@@ -7,17 +7,17 @@ myApp.controller('myCtrl',['$scope','$http',function($scope,$http){
     $scope.init = function(){
         // console.log('foo')
 
-        console.log(window.top)
+        // console.log(window.top)
 
-        console.log(window.self)
+        // console.log(window.self)
 
         if(window.top != window.self){
 
-    　　  console.log('fileinframe')
+    // 　　  console.log('fileinframe')
 
     　　}else{
 
-            console.log('filenotinframe')
+            // console.log('filenotinframe')
 
         }
 
